@@ -1,0 +1,112 @@
+.cart{
+    margin-top: 100px;
+}
+.cart-items-title{
+    display              : grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items          : center;
+    color                : gray;
+    font-size: max(1.7vw ,18px);
+}
+.cart-items-item{
+    margin          : 10px 0px;
+    color           : black;
+    font-size       : max(1.1vw ,16px);
+    background-color: rgb(231, 185, 170);
+    border-radius: 8px;
+}
+.cart-items-item img{
+    width        : 80px;
+    border-radius: 20px;
+    margin-right: 2px;
+}
+hr{
+    border: 0.5px solid gray;
+}
+.cross{
+    cursor          : pointer;
+    padding         : 7px;
+    width           : min-content;
+    border          : 1px solid red;
+    color           : red;
+    background-color: white;
+    font-weight: 600;
+}
+.cross:hover{
+    background-color: red;
+    color           : white;
+}
+.cart-bottom{
+    margin-top     : 80px;
+    display        : flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+.cart-total{
+    flex          : 1;
+    display       : flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-total-details{
+    display:flex;
+    justify-content:space-between;
+    color:#555;
+}
+.cart-total hr{
+    margin: 10px 0px;
+}
+.cart-total button{
+    color           : white;
+    background-color: #ff6e30;
+    border          : none;
+    width           : max(15vw,200px);
+    padding         : 12px 0px;
+    border-radius   : 4px;
+    cursor: pointer;
+}
+.cart-total button:hover{
+    border          : 1px solid #ff6347;
+    background-color: white;
+    color           : rgb(61, 49, 49);
+    transition      : all 0.3s ease-in-out;
+    font-weight     : 500;
+}
+.cart-promo-code{
+    flex: 1;
+}
+.cart-promo-code p{
+    color: #555;
+}
+.cart-promo-code-input{
+    margin-top      : 10px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: #eaeaea;
+    break-before: 4px;
+}
+.cart-promo-code-input input{
+    background  : transparent;
+    border      : none;
+    outline     : none;
+    padding-left: 10px;
+}
+.cart-promo-code-input button{
+    width           : max(10vw, 150px);
+    padding         : 12px 5px;
+    background-color: black;
+    border          : none;
+    color           : white;
+    cursor          : pointer;
+    border-radius   : 4px;
+}
+
+@media (max-width: 750px) {
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promo-code{
+        justify-content: start;
+    }
+}

@@ -1,0 +1,133 @@
+.navbar{
+    padding        : 5px 0px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+      /* background: rgb(208, 194, 194); */
+    border-bottom: 1px solid #eb6e34;
+}
+
+    .navbar .logo {
+        width: 120px;
+        box-shadow: 0px 0px 10px #eb6e34;
+    }
+    .navbar .logo:hover{
+        filter: drop-shadow(0px 0px 10px #c4bab5);
+        scale : 1.05;
+        transition: 0.3s ease-in-out;
+    }
+
+/* .navbar .logo {
+    width: 120px;
+    filter: drop-shadow(0px 0px 10px #dceb34);
+} */
+ .admin{
+    width: 50px;
+ }
+
+.navbar-menu{
+    display   : flex;
+    list-style: none;
+    gap       : 20px;
+    color     : #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display    : flex;
+    gap        : 40px;
+    align-items: center;
+}
+.navbar button{
+    background-color: transparent;
+    border          : 1px solid tomato;
+    font-size       : 16px;
+    padding         : 10px 30px;
+    color           : #49557e;
+    border-radius   : 50px;
+    cursor          : pointer;
+    transition: 0.3s ease-in-out;
+}
+.navbar button:hover{
+    background-color: tomato;
+    color           : white;
+}
+.active{
+    color         : tomato;
+    border-bottom : 2px solid #49557e;
+    padding-bottom: 2px;
+    transition    : 0.1s ease-in-out;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position        : absolute;
+    min-width       : 10px;
+    min-height      : 10px;
+    background-color: tomato;
+    border-radius   : 100px;
+    top             : -8px;
+    right           : -8px;
+    color           : white;
+    padding         : 2px;
+}
+
+  /* Media Query */
+@media screen and (max-width: 1050px){
+    .navbar .logo{
+      width: 140PX;  
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+
+      .navbar .logo {
+        width: 80px;
+    }
+}
+
+  /* Media Query */
+@media screen and (max-width: 900px){
+    .navbar .logo{
+      width: 120PX;  
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+  /* Media Query */
+@media screen and (max-width: 750px){
+   
+    .navbar-menu{
+        display: none;
+    }
+      .navbar .logo {
+        width: 60px;
+    }
+   
+}

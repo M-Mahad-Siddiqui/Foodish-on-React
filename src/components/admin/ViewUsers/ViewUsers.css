@@ -1,0 +1,87 @@
+
+.view-users {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.user-heading {
+    margin: 20px 0;
+    font-size: max(1.5vw, 20px);
+    text-align: center;
+}
+
+.user-title {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items          : center;
+    color                : gray;
+    font-size            : max(1.2vw, 15px);
+    text-align           : left;
+    font-weight          : 700;
+    gap: 5px;
+}
+
+.users-entries {
+    margin          : 10px 0;
+    padding         : 10px 4px;
+    color           : black;
+    font-size       : max(0.9vw, 12px);
+    text-align      : left;
+    background-color: rgb(229, 191, 157);
+    border-radius   : 4px;
+    cursor          : pointer;
+    border: 5px solid white;
+}
+
+hr {
+    border: 0.5px solid gray;
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .user-title {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .user-title {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .user-title, .users-entries {
+        grid-template-columns: 1fr; /* Stack in a single column */
+    }
+    .user-heading {
+        font-size: max(4vw, 18px);
+    }
+    .user-title p, .users-entries p {
+        font-size: max(2vw, 14px);
+    }
+}
+  /* .view_users{
+    margin-top: 100px;
+}
+.user-heading{
+    margin: 20px 0px;
+    font-size: max(2vw, 20px);
+}
+
+.user-title{
+    display              : grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items          : center;
+    color                : gray;
+    font-size            : max(1.2vw, 15px);
+}
+.users-entries{
+    margin: 20px 0px;
+    color : black;
+    font-size            : max(0.9vw, 12px);
+}
+hr{
+    border: 0.5px solid gray;
+} */
