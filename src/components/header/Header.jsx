@@ -43,7 +43,7 @@ const styles = {
                     Choose from a diverse collection of delicious dishes crafted with the finest ingredients and culinary expertise.
                     Our mission is to satisfy our customers with quality food and make food accessible to all.
                 </p>
-                <button>View Menu</button>
+                <button onClick = {() => window.location.href = '#explore-menu'}>View Menu</button>
             </div>
         </div>
     );

@@ -1,0 +1,78 @@
+.food-detail {
+height         : 100vh;       /* Use full viewport height */
+display        : block;       /* Use block layout to ensure normal document flow */
+padding        : 15px;
+box-sizing     : border-box;  /* Include padding in height */
+display        : flex;
+justify-content: center;
+align-items    : center;
+flex-direction : column;
+}
+
+body, html {
+    margin : 0;
+    padding: 0;
+    height : 100%;  /* Ensure body and html take full height */
+}
+.label{
+    font-size     : 25px;
+    color         : tomato;
+    font-weight   : 500;
+    box-shadow    : 2px 3px 5px rgba(0, 0, 0, 0.3);
+    padding       : 10px 10px;
+    padding-bottom: 22px;
+    border-radius : 10px;
+    margin        : 10px 10px;
+    margin-top: 130px;
+}
+.food-des {
+    margin-top    : 20px;
+    box-shadow    : 0px 0px 8px rgba(0, 0, 0, 0.3);
+    padding       : 10px;
+    font-size     : larger;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    /* max-width     : 720px; */
+    padding       : 30px 50px;
+    border-radius: 8px;
+}
+.back{
+    width       : 40px;
+    margin-right: 20px;
+}
+
+.food-des img {
+    width: 500px;
+    max-height: 450px;
+    border-radius: 10px;
+    align-items  : center;
+    display      : flex;
+    margin: 0% auto;
+}
+
+.food-des h2 {
+    margin-top: 10px;
+    font-size : 40px;
+}
+
+.food-des p{
+    margin-top    : 8px;
+    font-size     : large;
+    color         : rgb(35, 30, 30);
+    letter-spacing: 0.1cm;
+
+}
+
+/* Correcting the last child rule for <p> */
+.food-des p:nth-last-child(1) {
+    margin-top      : 15px;
+    width           : 100px;
+    background-color: tomato;
+    color           : white;
+    text-align      : center;
+    border-radius   : 20px;
+    padding         : 4px;
+    font-weight     : 700;
+    
+}

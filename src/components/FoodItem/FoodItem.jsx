@@ -60,6 +60,7 @@
 
 // export default FoodItem;
 
+import { Link } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import { useStoreContext } from '../../context/StoreContext';
 import './FoodItem.css';
@@ -83,9 +84,11 @@ function FoodItem({ item }) {
     // }, [cartItems]); // Log cartItems whenever it changes
 
     return (
-        <div className = 'food-item'>
-        <div className = 'food-item-image-container'>
-        <img src       = {image} alt = {name} className = 'food-item-image' />
+        <div  className = 'food-item'>
+        <div  className = 'food-item-image-container'>
+        <Link to        = {`/FoodDetail/${id}`}>
+        <img  src       = {image} alt = {name} className = 'food-item-image' />
+        </Link>
                 {itemCount === 0 ? (
                     <img
                         className='add'
@@ -102,9 +105,9 @@ function FoodItem({ item }) {
                         />
                         <p>{itemCount}</p>
                         <img
-                            onClick={handleIncrement}
-                            src={assets.add_icon_green}
-                            alt="Add item"
+                            onClick = {handleIncrement}
+                            src     = {assets.add_icon_green}
+                            alt     = "Add item"
                         />
                     </div>
                 )}
