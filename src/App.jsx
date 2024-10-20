@@ -16,7 +16,7 @@ import PlaceOrder from "./pages/placeOrder/PlaceOrder";
 function App() {
   const [showLogin, setShowLogin] = useState(false);
   
-         //  .useLocation() is a class with a object called location have a so many properties like pathname, search, hash, state, key, and other property
+  //  .useLocation() is a class with a object called location have a so many properties like pathname, search, hash, state, key, and other property
   const location = useLocation();
 
   const isAdminRoute = location.pathname === "/admin"; // Check if the current path is "/admin"
